@@ -55,7 +55,7 @@ RUN \
 
 	# FFmpeg
 	export SRC=/usr \
-	export FFMPEG_VERSION=4.1 \
+	export FFMPEG_VERSION=4.1.3 \
 
 	DIR=$(mktemp -d) && cd ${DIR} && \
 	curl -Os http://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.gz && \
@@ -81,7 +81,7 @@ RUN \
 	av==6.1.2 && \
 
 	## OpenCV
-	export OPENCV_VERSION=3.4.5 \
+	export OPENCV_VERSION=3.4.6 \
 	export PYTHON_VERSION=`python -c 'import platform; print(".".join(platform.python_version_tuple()[:2]))'` \
 	export CC=/usr/bin/clang \
 	export CXX=/usr/bin/clang++ && \
